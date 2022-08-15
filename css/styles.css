@@ -28,7 +28,7 @@ body {
 .list {
   list-style: none;
   margin-top: 0;
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 .visually-hidden {
@@ -47,7 +47,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1230px;
+  width: 1200px;
   outline: 2px solid tomato;
 }
 
@@ -95,6 +95,8 @@ body {
 .hyro {
   background-color: var(--hyro-bg-color);
   text-align: center;
+  height: 600px;
+  margin-bottom: 94px;
 }
 .hyro-title {
   color: var(--primery-bg-color);
@@ -104,7 +106,7 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-    letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -119,10 +121,10 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   padding: 10px 32px;
-  
-margin-left: auto;
+  border-radius: 4px;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  margin-left: auto;
   margin-right: auto;
-
 }
 
 .button:hover,
