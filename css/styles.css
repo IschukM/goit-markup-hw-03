@@ -55,6 +55,10 @@ img {
   width: 1200px;
   outline: 2px solid tomato;
 }
+.flex{
+  display: flex;
+      flex-direction: row;
+      }
 
 /* site-nav */
 
@@ -144,7 +148,13 @@ img {
 .button:focus {
   background-color: var(--buton-active-color);
 }
+
 /* section */
+
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .section-title {
   color: var(--title-text-color);
@@ -153,9 +163,13 @@ img {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 /* features */
+
 .features-list .title {
   color: var(--title-text-color);
 
@@ -164,16 +178,23 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .features-list .text {
   font-weight: 400;
   line-height: 1.71;
 }
+/* activity */
+.no-padding{
+padding-top: 0%;
+}
 
 /* team */
 .section-team {
   background-color: var(--secondary-bg-color);
+ 
+
 }
 .team-card {
   background-color: var(--primery-bg-color);
