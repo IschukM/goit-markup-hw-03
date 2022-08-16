@@ -43,8 +43,13 @@ body {
   clip-path: inset(50%);
   margin: -1px;
 }
+img {
+  display: block;
+}
 
 .container {
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -94,20 +99,25 @@ body {
 }
 .hyro {
   background-color: var(--hyro-bg-color);
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  height: 600px;
-  margin-bottom: 94px;
+  width: 1600px;
 }
 .hyro-title {
   color: var(--primery-bg-color);
 
-  margin-top: 0;
-  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-top: 0%;
+  margin-bottom: 40;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* button */
@@ -120,11 +130,14 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+  min-width: 216px;
+
   padding: 10px 32px;
   border-radius: 4px;
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin-left: auto;
   margin-right: auto;
+  display: inline-block;
 }
 
 .button:hover,
@@ -185,6 +198,7 @@ body {
 /* footer */
 .footer {
   background-color: var(--hyro-bg-color);
+  width: 1600px;
 }
 .footer .logo {
   color: var(--primery-bg-color);
