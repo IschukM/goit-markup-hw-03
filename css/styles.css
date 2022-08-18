@@ -294,9 +294,7 @@ body {
 
 .footer {
   background-color: var(--hyro-bg-color);
-  width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
+
   padding-top: 60px;
   padding-bottom: 60px;
 }
