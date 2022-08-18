@@ -33,6 +33,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -73,6 +75,9 @@ body {
   margin-right: auto;
 
   outline: 2px solid tomato;
+}
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 /* site-nav */
@@ -207,6 +212,7 @@ body {
 }
 
 /* features */
+
 .features-list {
   display: flex;
 }
@@ -299,12 +305,10 @@ body {
   display: inline-block;
   margin-bottom: 20px;
 }
-/* .address-item {
-  display: block;
-}
+
 .address-item + .address-item {
-  margin-left: 9px;
-} */
+  margin-top: 9px;
+}
 
 .address .text,
 .address .link {
@@ -331,6 +335,10 @@ body {
 }
 
 /* portfolio */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .filters {
   display: flex;
@@ -364,6 +372,13 @@ body {
 .project {
   display: flex;
   flex-wrap: wrap;
+}
+.project-name {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
+.project-name .title {
+  margin-bottom: 4px;
 }
 
 .flex-element {
