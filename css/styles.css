@@ -33,6 +33,8 @@ button {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -73,6 +75,9 @@ body {
   margin-right: auto;
 
   outline: 2px solid tomato;
+}
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 /* site-nav */
@@ -207,6 +212,7 @@ body {
 }
 
 /* features */
+
 .features-list {
   display: flex;
 }
@@ -288,9 +294,7 @@ body {
 
 .footer {
   background-color: var(--hyro-bg-color);
-  width: 1600px;
-  margin-right: auto;
-  margin-left: auto;
+
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -298,6 +302,10 @@ body {
   color: var(--primery-bg-color);
   display: block;
   margin-bottom: 20px;
+}
+
+.address-item + .address-item {
+  margin-top: 9px;
 }
 
 .address .text,
@@ -325,6 +333,10 @@ body {
 }
 
 /* portfolio */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .filters {
   display: flex;
@@ -358,6 +370,13 @@ body {
 .project {
   display: flex;
   flex-wrap: wrap;
+}
+.project-name {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+}
+.project-name .title {
+  margin-bottom: 4px;
 }
 
 .flex-element {
