@@ -296,15 +296,9 @@ body {
 }
 .footer .logo {
   color: var(--primery-bg-color);
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
 }
-/* .address-item {
-  display: block;
-}
-.address-item + .address-item {
-  margin-left: 9px;
-} */
 
 .address .text,
 .address .link {
