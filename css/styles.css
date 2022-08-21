@@ -29,6 +29,10 @@ ol {
 
 button {
   cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-radius: 4px;
 }
 
 img {
@@ -69,10 +73,8 @@ body {
 
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 0 15px;
+  margin: 0 auto;
 
   /* outline: 2px solid tomato; */
 }
@@ -149,43 +151,41 @@ body {
 .contacts-nav .link:focus {
   color: var(--accent-color);
 }
-.hyro {
+
+.hero {
   background-color: var(--hyro-bg-color);
-  margin-left: auto;
-  margin-right: auto;
+
   text-align: center;
-  width: 1600px;
+  padding: 200px 0;
 }
-.hyro-title {
+
+.hero-title {
   color: var(--primery-bg-color);
 
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  margin-bottom: 40;
-  width: 696px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 /* button */
 .button {
   color: var(--primery-bg-color);
-  font-family: inherit;
   background-color: var(--accent-color);
+
+  min-width: 216px;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  min-width: 216px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   padding: 10px 32px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  display: inline-block;
 }
 
 .button:hover,
@@ -216,11 +216,11 @@ body {
 .features-list {
   display: flex;
 }
-.team-list .item {
-  width: calc((100%-90) / 4);
+.features-list .item {
+  width: calc((100% - 90) / 4);
 }
 
-.team-list .item + .item {
+.features-list .item + .item {
   margin-left: 30px;
 }
 
@@ -256,9 +256,6 @@ body {
 .team-name {
   padding-top: 30px;
   padding-bottom: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
 }
 
 .team-list {
@@ -274,8 +271,11 @@ body {
 
 .team-card {
   background-color: var(--primery-bg-color);
-  width: calc((100%-90) / 4);
+  width: calc((100% - 90) / 4);
   text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-card .title {
@@ -285,7 +285,7 @@ body {
 
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2px;
+  line-height: 1.2;
 }
 
 .team-card .text {
@@ -313,9 +313,8 @@ body {
   margin-top: 9px;
 }
 
-.address .text,
 .address .link {
-  color: var(--primery-bg-color);
+  color: rgba(255, 255, 255, 0.6);
 
   font-style: normal;
   font-weight: 400;
@@ -331,10 +330,8 @@ body {
   color: var(--accent-color);
 }
 
-.address .link {
-  color: rgba(255, 255, 255, 0.6);
-
-  font-style: normal;
+.address .text {
+  color: var(--primery-bg-color);
 }
 
 /* portfolio */
@@ -352,18 +349,17 @@ body {
 .filters .item + .item {
   margin-left: 8px;
 }
-.filters .item {
-  padding: 6px 22px;
-}
 
 .filters-button {
+  padding: 6px 22px;
+
   color: var(--title-text-color);
 
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  border: 0;
+  letter-spacing: 0.03em;
 }
 
 .filters-button:hover,
@@ -407,5 +403,5 @@ body {
 .project .text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 0.88;
+  line-height: 1.88;
 }
